@@ -271,6 +271,12 @@
             <div class="search-box">
                 <h3>🔍 快速查找文档</h3>
                 <input type="text" class="search-input" placeholder="输入产品名称、型号或关键词搜索...">
+                <div class="filter-bar">
+                    <button class="filter-btn active" data-filter="all">全部 <span class="count">26</span></button>
+                    <button class="filter-btn" data-filter="spec">📋 规格参数 <span class="count">10</span></button>
+                    <button class="filter-btn" data-filter="guide">🛠️ 安装指南 <span class="count">9</span></button>
+                    <button class="filter-btn" data-filter="case">📖 应用案例 <span class="count">7</span></button>
+                </div>
             </div>
 
             <!-- 垫片产品资料 -->
@@ -757,6 +763,36 @@
                     alert('此文档暂未上传。\n\n如需获取该技术文档，请访问Garlock官方网站或联系我们的技术支持团队。');
                 }
                 // 真实的PDF链接会正常执行下载
+            });
+        });
+
+        // 分类筛选功能
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const documentCards = document.querySelectorAll('.document-card');
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', function() {
+                // 更新活跃按钮样式
+                filterButtons.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+
+                const filter = this.getAttribute('data-filter');
+
+                documentCards.forEach(card => {
+                    if (filter === 'all') {
+                        card.classList.remove('hidden-by-filter');
+                    } else {
+                        const docType = card.querySelector('.doc-type');
+                        if (docType) {
+                            const typeClass = docType.classList.contains(filter);
+                            if (typeClass) {
+                                card.classList.remove('hidden-by-filter');
+                            } else {
+                                card.classList.add('hidden-by-filter');
+                            }
+                        }
+                    }
+                });
             });
         });
     </script>

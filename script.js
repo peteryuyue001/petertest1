@@ -117,6 +117,14 @@ function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
+// 规格参数面板切换
+function toggleSpecs(button) {
+    const panel = button.parentElement;
+    const table = panel.querySelector('.specs-table');
+    const isActive = table.classList.toggle('active');
+    button.classList.toggle('active', isActive);
+}
+
 // 平滑过渡效果
 document.addEventListener('DOMContentLoaded', function() {
     const observer = new IntersectionObserver(function(entries) {

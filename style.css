@@ -230,6 +230,233 @@ body {
     line-height: 1.8;
 }
 
+/* 行业应用场景 */
+.industry-applications {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.industry-applications h2 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+    color: #6b7280;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+}
+
+.industry-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.industry-card {
+    background: var(--light-bg);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    border-top: 4px solid var(--secondary-color);
+    transition: all 0.3s ease;
+}
+
+.industry-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 61, 122, 0.12);
+    border-top-color: var(--accent-color);
+}
+
+.industry-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.industry-card h3 {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    margin-bottom: 0.8rem;
+}
+
+.industry-card p {
+    color: #6b7280;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* 授权资质 */
+.certifications {
+    padding: 60px 20px;
+    background-color: var(--light-bg);
+}
+
+.certifications h2 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.cert-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    border-left: 4px solid var(--success-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.cert-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 61, 122, 0.12);
+    transform: translateY(-4px);
+}
+
+.cert-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.cert-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.8rem;
+    font-size: 1.15rem;
+}
+
+.cert-card p {
+    color: #6b7280;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* 规格参数面板 */
+.specs-panel {
+    margin-top: 1.5rem;
+    padding: 0 2rem 1rem 2rem;
+}
+
+.specs-toggle {
+    background: none;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    padding: 0.5rem 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.specs-toggle:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.specs-toggle .arrow {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    font-size: 0.7rem;
+}
+
+.specs-toggle.active .arrow {
+    transform: rotate(180deg);
+}
+
+.specs-table {
+    display: none;
+    margin-top: 1rem;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+}
+
+.specs-table.active {
+    display: table;
+}
+
+.specs-table th,
+.specs-table td {
+    padding: 0.6rem 0.8rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.specs-table th {
+    background-color: #e8eef5;
+    color: var(--primary-color);
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.specs-table td {
+    color: #4b5563;
+}
+
+.specs-table tr:hover td {
+    background-color: #f0f4fa;
+}
+
+/* 资料库分类筛选 */
+.filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.filter-btn {
+    background-color: var(--light-bg);
+    border: 2px solid var(--border-color);
+    color: var(--text-color);
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.filter-btn.active {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: white;
+}
+
+.filter-btn .count {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 0.15rem 0.45rem;
+    border-radius: 10px;
+    font-size: 0.75rem;
+    margin-left: 0.4rem;
+}
+
+.filter-btn.active .count {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.document-card.hidden-by-filter {
+    display: none;
+}
+
 /* 统计部分 */
 .stats {
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
