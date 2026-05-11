@@ -6,13 +6,15 @@
 }
 
 :root {
-    --primary-color: #1e3a8a;
-    --secondary-color: #3b82f6;
-    --accent-color: #f59e0b;
+    --primary-color: #003d7a;
+    --secondary-color: #0066cc;
+    --accent-color: #e63946;
     --text-color: #1f2937;
-    --light-bg: #f9fafb;
+    --light-bg: #f8f9fb;
     --border-color: #e5e7eb;
-    --success-color: #10b981;
+    --success-color: #00a86b;
+    --garlock-blue: #003d7a;
+    --garlock-red: #e63946;
 }
 
 html {
@@ -292,16 +294,72 @@ body {
 
 .service-card {
     background: white;
-    padding: 2rem;
+    padding: 0;
     border-radius: 8px;
-    border-top: 4px solid var(--secondary-color);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+    overflow: hidden;
+    box-shadow: 0 3px 15px rgba(0, 61, 122, 0.1);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 2px solid transparent;
+    position: relative;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--garlock-red) 0%, var(--garlock-blue) 100%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.service-card:hover::before {
+    opacity: 1;
 }
 
 .service-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 20px 45px rgba(0, 61, 122, 0.2);
+    border-color: var(--garlock-blue);
+}
+
+.product-image {
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #e8eef5 0%, #d4dce8 100%);
+    position: relative;
+}
+
+.product-image::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(to top, rgba(0,61,122,0.3), transparent);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.service-card:hover .product-image::after {
+    opacity: 1;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    filter: brightness(0.92) contrast(1.05);
+}
+
+.service-card:hover .product-image img {
+    transform: scale(1.08);
+    filter: brightness(1) contrast(1.1);
 }
 
 .service-icon {
@@ -310,34 +368,67 @@ body {
 }
 
 .service-card h3 {
-    color: var(--primary-color);
-    font-size: 1.3rem;
+    color: var(--garlock-blue);
+    font-size: 1.5rem;
     margin-bottom: 1rem;
+    padding: 0 2rem;
+    margin-top: 2.2rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.3;
+    position: relative;
+}
+
+.service-card h3::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 2rem;
+    width: 50px;
+    height: 3px;
+    background: var(--garlock-red);
+    transition: width 0.4s ease;
+}
+
+.service-card:hover h3::after {
+    width: 80px;
 }
 
 .service-card p {
-    color: #6b7280;
-    margin-bottom: 1.5rem;
+    color: #4b5563;
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+    line-height: 1.8;
+    font-size: 1.02rem;
+    margin-top: 1.5rem;
 }
 
 .service-card ul {
     list-style: none;
     text-align: left;
+    padding: 0 1.5rem 1.5rem 1.5rem;
 }
 
 .service-card ul li {
-    padding: 0.5rem 0;
-    padding-left: 1.5rem;
+    padding: 0.6rem 0;
+    padding-left: 1.8rem;
     position: relative;
     color: #6b7280;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.service-card:hover ul li {
+    color: #4b5563;
 }
 
 .service-card ul li:before {
     content: "✓";
     position: absolute;
     left: 0;
-    color: var(--success-color);
+    color: var(--garlock-red);
     font-weight: bold;
+    font-size: 1.15rem;
 }
 
 /* 联系页面 */
