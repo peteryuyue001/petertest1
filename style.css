@@ -704,6 +704,45 @@ body {
     box-shadow: 0 4px 15px rgba(30, 64, 175, 0.3);
 }
 
+.resource-card-large {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.resource-list {
+    list-style: none;
+    margin: 2rem 0 0;
+    padding: 0;
+    text-align: left;
+}
+
+.resource-list li {
+    margin-bottom: 1rem;
+    padding: 1rem 1.2rem;
+    background: #f8fafc;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.resource-list li strong {
+    color: var(--garlock-blue);
+    font-size: 1rem;
+}
+
+.resource-list li a {
+    color: var(--garlock-blue);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.resource-list li a:hover {
+    text-decoration: underline;
+}
+
 .resources-note {
     background: white;
     padding: 2rem;
