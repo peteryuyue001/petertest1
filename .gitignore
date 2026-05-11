@@ -1,0 +1,32 @@
+# 操作系统
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.sublime-project
+.sublime-workspace
+
+# Node (如果后期添加)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# 环境变量
+.env
+.env.local
+.env.*.local
+
+# 其他
+*.log
+dist/
+build/
