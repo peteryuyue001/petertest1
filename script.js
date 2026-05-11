@@ -56,12 +56,34 @@ function showMessage(element, message, type) {
     element.className = `form-message ${type}`;
 }
 
-// 导航栏激活效果
+// 汉堡菜单切换
+function toggleMobileMenu() {
+    const navMenu = document.getElementById('navMenu');
+    const hamburger = document.querySelector('.hamburger');
+    if (navMenu) {
+        const isActive = navMenu.classList.toggle('active');
+        if (hamburger) {
+            hamburger.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+        }
+    }
+}
+
+// 点击导航链接时关闭移动菜单
 document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.nav-links a');
     
     navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
+        link.addEventListener('click', function() {
+            // 关闭移动菜单
+            const navMenu = document.getElementById('navMenu');
+            const hamburger = document.querySelector('.hamburger');
+            if (navMenu) {
+                navMenu.classList.remove('active');
+            }
+            if (hamburger) {
+                hamburger.setAttribute('aria-expanded', 'false');
+            }
+            
             // 移除所有活跃状态
             navLinks.forEach(l => l.classList.remove('active'));
             // 给当前链接添加活跃状态
@@ -70,22 +92,29 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// 监听滚动事件，更新导航栏
+// 监听滚动事件，更新导航栏阴影和返回顶部按钮
 window.addEventListener('scroll', function() {
     const navbar = document.querySelector('.navbar');
+    const backToTop = document.getElementById('backToTop');
+    
     if (window.scrollY > 50) {
         navbar.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.15)';
     } else {
         navbar.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.1)';
     }
+    
+    if (backToTop) {
+        if (window.scrollY > 500) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+    }
 });
 
-// 响应式导航菜单（可选）
-function toggleMobileMenu() {
-    const navLinks = document.querySelector('.nav-links');
-    if (navLinks) {
-        navLinks.classList.toggle('active');
-    }
+// 返回顶部
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 // 平滑过渡效果
@@ -108,4 +137,35 @@ document.addEventListener('DOMContentLoaded', function() {
         card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(card);
     });
+
+    // 更新版权年份为当前年份
+    const yearElements = document.querySelectorAll('.copyright-year');
+    const currentYear = new Date().getFullYear();
+    yearElements.forEach(el => {
+        el.textContent = currentYear;
+    });
+});
+
+// 图片懒加载
+document.addEventListener('DOMContentLoaded', function() {
+    const lazyImages = document.querySelectorAll('img[data-src]');
+    if ('IntersectionObserver' in window) {
+        const imageObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.src = img.dataset.src;
+                    img.removeAttribute('data-src');
+                    imageObserver.unobserve(img);
+                }
+            });
+        });
+        lazyImages.forEach(img => imageObserver.observe(img));
+    } else {
+        // 降级处理：直接加载所有图片
+        lazyImages.forEach(img => {
+            img.src = img.dataset.src;
+            img.removeAttribute('data-src');
+        });
+    }
 });

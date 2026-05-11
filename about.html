@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>卡勒克Garlock密封技术服务中心 - 中国授权代理商</title>
     <meta name="description" content="专业提供Garlock高性能密封解决方案。作为授权经销商，我们不仅供应原装Klozure油封，更提供针对化工、制药等行业的定制选型服务。">
+    <meta property="og:title" content="卡勒克Garlock密封技术服务中心 - 中国授权代理商">
+    <meta property="og:description" content="专业提供Garlock高性能密封解决方案。作为授权经销商，我们不仅供应原装Klozure油封，更提供针对化工、制药等行业的定制选型服务。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://peteryuyue001.github.io/petertest1/about.html">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%23003d7a'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-size='18' font-weight='bold' font-family='Arial'>G</text></svg>">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,7 +17,8 @@
     <nav class="navbar">
         <div class="container">
             <div class="logo">上海物泽实业 | Delta Industry</div>
-            <ul class="nav-links">
+            <button class="hamburger" onclick="toggleMobileMenu()" aria-label="菜单" aria-expanded="false">☰</button>
+            <ul class="nav-links" id="navMenu">
                 <li><a href="index.html">首页</a></li>
                 <li><a href="about.html" class="active">关于我们</a></li>
                 <li><a href="services.html">产品分类</a></li>
@@ -83,10 +89,13 @@
         </div>
     </section>
 
+    <!-- 返回顶部按钮 -->
+    <button id="backToTop" class="back-to-top" onclick="scrollToTop()" aria-label="返回顶部">⬆</button>
+
     <!-- 页脚 -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 上海物泽实业有限公司（Delta Industry (Shanghai) Co.,Ltd.）版权所有。</p>
+            <p>&copy; <span class="copyright-year">2024</span> 上海物泽实业有限公司（Delta Industry (Shanghai) Co.,Ltd.）版权所有。</p>
         </div>
     </footer>
 
