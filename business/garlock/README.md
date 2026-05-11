@@ -4,40 +4,40 @@
 ### 产品资料目录
 
 #### 1. 垫片系列 (Gaskets)
-- **文件**: gaskets_catalog.pdf
+- **文件**: gaskets_catalog.txt
 - **内容**: GYLON®、BLUE-GARD®、MULTI-SWELL® 等系列产品详细介绍
 - **更新日期**: 2024年5月
-- **文件大小**: 2.3 MB
+- **格式**: 文本文档
 
 #### 2. 机械密封系列 (Mechanical Seals)
-- **文件**: mechanical_seals_manual.pdf
+- **文件**: mechanical_seals_manual.txt
 - **内容**: KLOZURE® 机械密封技术手册和安装指南
 - **更新日期**: 2024年5月
-- **文件大小**: 3.1 MB
+- **格式**: 文本文档
 
 #### 3. 压缩填料系列 (Compression Packing)
-- **文件**: compression_packing_guide.pdf
+- **文件**: compression_packing_guide.txt
 - **内容**: HYDRA-JUST®、DSA 等填料产品技术指南
 - **更新日期**: 2024年5月
-- **文件大小**: 1.8 MB
+- **格式**: 文本文档
 
 #### 4. 轴承保护系列 (Bearing Protection)
-- **文件**: bearing_protection_catalog.pdf
+- **文件**: bearing_protection_catalog.txt
 - **内容**: KLOZURE® 轴承隔离器和油封产品目录
 - **更新日期**: 2024年5月
-- **文件大小**: 2.7 MB
+- **格式**: 文本文档
 
 #### 5. 泵和阀门隔膜系列 (Diaphragms)
-- **文件**: diaphragms_technical_guide.pdf
+- **文件**: diaphragms_technical_guide.txt
 - **内容**: ONE-UP® 和PTFE隔膜技术资料
 - **更新日期**: 2024年5月
-- **文件大小**: 1.9 MB
+- **格式**: 文本文档
 
 #### 6. 工业软管系列 (Industrial Hose)
-- **文件**: industrial_hose_manual.pdf
+- **文件**: industrial_hose_manual.txt
 - **内容**: ABRA-LINE® 和ABRA-SHIELD® 软管产品手册
 - **更新日期**: 2024年5月
-- **文件大小**: 2.4 MB
+- **格式**: 文本文档
 
 ### 下载说明
 1. 点击相应产品类别的下载链接
