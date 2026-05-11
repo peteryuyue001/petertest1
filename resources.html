@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Garlock产品资料库 - 技术文档下载中心</title>
-    <meta name="description" content="下载Garlock产品的详细技术资料，包含规格参数、安装指南和应用案例。提供GYLON垫片、KLOZURE机械密封、管道密封等全系列产品文档。">
-    <meta property="og:title" content="Garlock产品资料库 - 技术文档下载中心">
-    <meta property="og:description" content="下载Garlock产品的详细技术资料，包含规格参数、安装指南和应用案例。提供GYLON垫片、KLOZURE机械密封、管道密封等全系列产品文档。">
+    <title>Garlock产品资料库 - 86份技术文档下载中心</title>
+    <meta name="description" content="下载Garlock全系列86份官方技术资料：GYLON垫片、压缩纤维垫片、GRAPH-LOCK石墨垫片、橡胶垫片、应力消除垫片等完整规格书与选型指南。">
+    <meta property="og:title" content="Garlock产品资料库 - 86份技术文档下载中心">
+    <meta property="og:description" content="下载Garlock全系列86份官方技术资料：GYLON垫片、压缩纤维垫片、GRAPH-LOCK石墨垫片、橡胶垫片、应力消除垫片等完整规格书与选型指南。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://peteryuyue001.github.io/petertest1/resources.html">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%23003d7a'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-size='18' font-weight='bold' font-family='Arial'>G</text></svg>">
@@ -17,13 +17,11 @@
             padding: 40px 20px;
             text-align: center;
         }
-        
         .resources-intro h2 {
             color: var(--primary-color);
             font-size: 2rem;
             margin-bottom: 1rem;
         }
-        
         .resources-intro p {
             font-size: 1.1rem;
             color: #6b7280;
@@ -31,11 +29,9 @@
             margin: 0 auto;
             line-height: 1.8;
         }
-        
         .resources-content {
             padding: 60px 20px;
         }
-        
         .resource-category {
             margin-bottom: 4rem;
             background: white;
@@ -45,12 +41,10 @@
             border: 2px solid transparent;
             transition: all 0.3s ease;
         }
-        
         .resource-category:hover {
             border-color: var(--secondary-color);
             box-shadow: 0 8px 20px rgba(0, 61, 122, 0.15);
         }
-        
         .category-header {
             background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
             color: white;
@@ -59,122 +53,73 @@
             align-items: center;
             gap: 1.5rem;
         }
-        
         .category-icon {
             font-size: 3rem;
             opacity: 0.9;
         }
-        
         .category-header h3 {
             font-size: 1.8rem;
             margin: 0;
         }
-        
         .category-header p {
             margin: 0.5rem 0 0 0;
             opacity: 0.9;
             font-size: 1rem;
         }
-        
         .document-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
             padding: 2rem;
         }
-        
         .document-card {
             background-color: var(--light-bg);
-            padding: 1.5rem;
+            padding: 1.2rem;
             border-radius: 8px;
             border-left: 4px solid var(--secondary-color);
             transition: all 0.3s ease;
-            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
-        
         .document-card:hover {
             transform: translateX(5px);
             box-shadow: 0 4px 12px rgba(0, 61, 122, 0.1);
             border-left-color: var(--accent-color);
         }
-        
-        .doc-type {
-            display: inline-block;
-            background-color: var(--secondary-color);
-            color: white;
-            padding: 0.3rem 0.8rem;
-            border-radius: 4px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            margin-bottom: 1rem;
-            letter-spacing: 0.5px;
-        }
-        
-        .doc-type.spec {
-            background-color: #0066cc;
-        }
-        
-        .doc-type.guide {
-            background-color: #00a86b;
-        }
-        
-        .doc-type.case {
-            background-color: #e63946;
-        }
-        
         .document-card h4 {
             color: var(--primary-color);
-            font-size: 1.2rem;
-            margin-bottom: 0.8rem;
+            font-size: 1rem;
+            margin-bottom: 0.4rem;
             line-height: 1.4;
         }
-        
-        .document-card p {
-            color: #6b7280;
-            font-size: 0.95rem;
-            line-height: 1.6;
-            margin-bottom: 1rem;
-        }
-        
         .doc-meta {
-            display: flex;
-            gap: 1.5rem;
-            margin-bottom: 1.2rem;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             color: #9ca3af;
+            margin-bottom: 0.8rem;
         }
-        
-        .doc-meta span {
-            display: flex;
-            align-items: center;
-            gap: 0.4rem;
-        }
-        
         .download-button {
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
             background-color: var(--secondary-color);
             color: white;
-            padding: 0.7rem 1.5rem;
+            padding: 0.5rem 1.2rem;
             border-radius: 6px;
             text-decoration: none;
             font-weight: 600;
+            font-size: 0.9rem;
             transition: all 0.3s ease;
-            font-size: 0.95rem;
+            align-self: flex-start;
         }
-        
         .download-button:hover {
             background-color: var(--primary-color);
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(0, 61, 122, 0.3);
         }
-        
         .download-icon {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
         }
-        
         .search-box {
             background: white;
             padding: 2rem;
@@ -182,12 +127,10 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
             margin-bottom: 3rem;
         }
-        
         .search-box h3 {
             color: var(--primary-color);
             margin-bottom: 1rem;
         }
-        
         .search-input {
             width: 100%;
             padding: 1rem;
@@ -196,13 +139,11 @@
             font-size: 1rem;
             transition: border-color 0.3s ease;
         }
-        
         .search-input:focus {
             outline: none;
             border-color: var(--secondary-color);
             box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
         }
-        
         .contact-support {
             background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
             color: white;
@@ -211,29 +152,24 @@
             text-align: center;
             margin-top: 3rem;
         }
-        
         .contact-support h3 {
             font-size: 1.8rem;
             margin-bottom: 1rem;
         }
-        
         .contact-support p {
             font-size: 1.1rem;
             margin-bottom: 1.5rem;
             opacity: 0.95;
         }
-        
         .contact-support .cta-button {
             background-color: var(--accent-color);
         }
-        
         .contact-support .cta-button:hover {
             background-color: #d97706;
         }
     </style>
 </head>
 <body>
-    <!-- 导航栏 -->
     <nav class="navbar">
         <div class="container">
             <div class="logo">上海物泽实业 | Delta Industry</div>
@@ -248,482 +184,203 @@
         </div>
     </nav>
 
-    <!-- 页面标题 -->
     <section class="page-header">
         <div class="container">
             <h1>📚 Garlock产品资料库</h1>
-            <p>专业技术文档 | 详细规格参数 | 安装指南 | 应用案例</p>
+            <p>86份官方技术文档 | 覆盖6大产品系列 | 支持在线预览与下载</p>
         </div>
     </section>
 
-    <!-- 资料库介绍 -->
     <section class="resources-intro">
         <div class="container">
-            <h2>全面的技术文档支持</h2>
-            <p>我们提供Garlock全系列产品的详细技术资料，包括规格参数表、安装维护指南、应用案例分析等。所有文档均为官方最新版本，助您快速了解产品特性，做出正确选型决策。</p>
+            <h2>全面的原厂技术文档支持</h2>
+            <p>以下所有技术资料均为Garlock原厂官方数据表（Data Sheet），涵盖GYLON®、Blue-Gard®、GRAPH-LOCK®、STRESS SAVER™等全系列产品。每份文档包含完整的材料特性、工作参数、化学兼容性及认证信息，助您精准选型。</p>
         </div>
     </section>
 
-    <!-- 资料库内容 -->
     <section class="resources-content">
         <div class="container">
             <!-- 搜索框 -->
             <div class="search-box">
                 <h3>🔍 快速查找文档</h3>
-                <input type="text" class="search-input" placeholder="输入产品名称、型号或关键词搜索...">
-                <div class="filter-bar">
-                    <button class="filter-btn active" data-filter="all">全部 <span class="count">26</span></button>
-                    <button class="filter-btn" data-filter="spec">📋 规格参数 <span class="count">10</span></button>
-                    <button class="filter-btn" data-filter="guide">🛠️ 安装指南 <span class="count">9</span></button>
-                    <button class="filter-btn" data-filter="case">📖 应用案例 <span class="count">7</span></button>
-                </div>
+                <input type="text" class="search-input" placeholder="输入产品型号或关键词搜索（如 3500, Blue-Gard, Graph-Lock）...">
             </div>
 
-            <!-- 垫片产品资料 -->
+            <!-- ============ 1. GYLON PTFE 垫片 ============ -->
             <div class="resource-category">
                 <div class="category-header">
                     <span class="category-icon">📋</span>
                     <div>
-                        <h3>垫片产品 (Gaskets)</h3>
-                        <p>GYLON®、BLUE-GARD®、MULTI-SWELL® 等系列技术文档</p>
+                        <h3>GYLON® PTFE 垫片系列 (19份)</h3>
+                        <p>重组PTFE垫片 — 卓越的耐化学性和密封性能</p>
                     </div>
                 </div>
                 <div class="document-grid">
-                    <div class="document-card">
-                        <span class="doc-type spec">规格参数</span>
-                        <h4>GYLON® 3500系列技术规格书</h4>
-                        <p>详细的材料特性、物理性能、化学兼容性数据及应用温度范围</p>
-                        <div class="doc-meta">
-                            <span>📄 PDF格式</span>
-                            <span>🔢 2.5MB</span>
-                            <span>🕒 2024更新</span>
-                        </div>
-                        <a href="docs/garlock-gylon-3500-specs.pdf" class="download-button" download>
-                            <span class="download-icon">⬇️</span>
-                            下载文档
-                        </a>
-                    </div>
-
-                    <div class="document-card">
-                        <span class="doc-type guide">安装指南</span>
-                        <h4>GYLON®垫片安装与维护手册</h4>
-                        <p>专业安装步骤、扭矩规范、表面处理要求及常见问题解决方案</p>
-                        <div class="doc-meta">
-                            <span>📄 PDF格式</span>
-                            <span>🔢 3.8MB</span>
-                            <span>🕒 2024更新</span>
-                        </div>
-                        <a href="docs/garlock-gylon-installation-guide.pdf" class="download-button" download>
-                            <span class="download-icon">⬇️</span>
-                            下载文档
-                        </a>
-                    </div>
-
-                    <div class="document-card">
-                        <span class="doc-type case">应用案例</span>
-                        <h4>石油化工行业GYLON®应用案例集</h4>
-                        <p>真实案例分析，包括问题诊断、解决方案实施及效果评估</p>
-                        <div class="doc-meta">
-                            <span>📄 PDF格式</span>
-                            <span>🔢 5.2MB</span>
-                            <span>🕒 2024更新</span>
-                        </div>
-                        <a href="docs/garlock-application-cases.pdf" class="download-button" download>
-                            <span class="download-icon">⬇️</span>
-                            下载文档
-                        </a>
-                    </div>
-
-                    <div class="document-card">
-                        <span class="doc-type spec">规格参数</span>
-                        <h4>BLUE-GARD®低排放垫片规格表</h4>
-                        <p>环保性能数据、排放测试报告、认证信息及选型参考</p>
-                        <div class="doc-meta">
-                            <span>📄 PDF格式</span>
-                            <span>🔢 1.9MB</span>
-                            <span>🕒 2024更新</span>
-                        </div>
-                        <a href="#" class="download-button">
-                            <span class="download-icon">⬇️</span>
-                            下载文档
-                        </a>
-                    </div>
-
-                    <div class="document-card">
-                        <span class="doc-type guide">安装指南</span>
-                        <h4>MULTI-SWELL®膨胀垫片安装指南</h4>
-                        <p>独特的膨胀特性说明、安装预防措施及应用建议</p>
-                        <div class="doc-meta">
-                            <span>📄 PDF格式</span>
-                            <span>🔢 2.1MB</span>
-                            <span>🕒 2024更新</span>
-                        </div>
-                        <a href="#" class="download-button">
-                            <span class="download-icon">⬇️</span>
-                            下载文档
-                        </a>
-                    </div>
-
-                    <div class="document-card">
-                        <span class="doc-type case">应用案例</span>
-                        <h4>制药行业卫生级垫片应用白皮书</h4>
-                        <p>FDA/GMP合规案例、清洁验证方案及行业最佳实践</p>
-                        <div class="doc-meta">
-                            <span>📄 PDF格式</span>
-                            <span>🔢 4.6MB</span>
-                            <span>🕒 2024更新</span>
-                        </div>
-                        <a href="#" class="download-button">
-                            <span class="download-icon">⬇️</span>
-                            下载文档
-                        </a>
-                    </div>
+                    <div class="document-card"><h4>Style 3500 GYLON</h4><span class="doc-meta">PDF · 通用PTFE垫片</span><a href="docs/gylon/3500 Gylon.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 3502 GYLON</h4><span class="doc-meta">PDF · 微孔PTFE垫片</span><a href="docs/gylon/3502 Gylon.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 3503 GYLON</h4><span class="doc-meta">PDF · 填充PTFE垫片</span><a href="docs/gylon/3503 Gylon.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 3504 GYLON</h4><span class="doc-meta">PDF · 刚性PTFE垫片</span><a href="docs/gylon/3504 Gylon.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 3505 GYLON</h4><span class="doc-meta">PDF · 耐酸PTFE垫片</span><a href="docs/gylon/3505 Gylon.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 3510 GYLON</h4><span class="doc-meta">PDF · 通用耐温PTFE</span><a href="docs/gylon/3510 Gylon.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 3522 GYLON</h4><span class="doc-meta">PDF · 耐强碱PTFE垫片</span><a href="docs/gylon/3522 Gylon.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 3530 GYLON</h4><span class="doc-meta">PDF · 高压缩性PTFE</span><a href="docs/gylon/3530 Gylon.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 3535 GYLON</h4><span class="doc-meta">PDF · FDA合规PTFE垫片</span><a href="docs/gylon/3535 Gylon.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 3540 GYLON</h4><span class="doc-meta">PDF · 低蠕变PTFE垫片</span><a href="docs/gylon/3540 Gylon.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 3545 GYLON</h4><span class="doc-meta">PDF · 耐高温PTFE垫片</span><a href="docs/gylon/3545 Gylon.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 3560 GYLON</h4><span class="doc-meta">PDF · 搪玻璃设备专用</span><a href="docs/gylon/3560 Gylon.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 3561 GYLON</h4><span class="doc-meta">PDF · 增强型搪玻璃</span><a href="docs/gylon/3561 Gylon.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 3562 GYLON</h4><span class="doc-meta">PDF · 耐磨损PTFE垫片</span><a href="docs/gylon/3562 Gylon.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 3563 GYLON</h4><span class="doc-meta">PDF · 通用工业PTFE</span><a href="docs/gylon/3563 Gylon.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 3565 GYLON</h4><span class="doc-meta">PDF · 耐真空PTFE垫片</span><a href="docs/gylon/3565 Gylon.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 3591 GYLON Gen 2</h4><span class="doc-meta">PDF · 第二代高压PTFE</span><a href="docs/gylon/3591 Gylon Gen 2.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 3594 GYLON Gen 2</h4><span class="doc-meta">PDF · 第二代通用PTFE</span><a href="docs/gylon/3594 Gylon Gen 2.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 3535 FDA声明</h4><span class="doc-meta">PDF · FDA合规声明文件</span><a href="docs/gylon/FDA-Statement-Style-3535-Joint-Sealant-Nov-2011.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
                 </div>
             </div>
 
-            <!-- 机械密封资料 -->
+            <!-- ============ 2. 压缩纤维垫片 ============ -->
             <div class="resource-category">
                 <div class="category-header">
-                    <span class="category-icon">⚙️</span>
+                    <span class="category-icon">🔩</span>
                     <div>
-                        <h3>机械密封产品 (Mechanical Seals)</h3>
-                        <p>KLOZURE® 机械密封系列完整技术资料</p>
+                        <h3>压缩纤维垫片系列 (21份)</h3>
+                        <p>Blue-Gard®、Multi-Swell®、Leak-Gard® 等高性能无石棉垫片</p>
                     </div>
                 </div>
                 <div class="document-grid">
-                    <div class="document-card">
-                        <span class="doc-type spec">规格参数</span>
-                        <h4>KLOZURE®机械密封技术规格总览</h4>
-                        <p>全系列产品规格、材料配置、性能参数及尺寸数据</p>
-                        <div class="doc-meta">
-                            <span>📄 PDF格式</span>
-                            <span>🔢 4.3MB</span>
-                            <span>🕒 2024更新</span>
-                        </div>
-                        <a href="#" class="download-button">
-                            <span class="download-icon">⬇️</span>
-                            下载文档
-                        </a>
-                    </div>
-
-                    <div class="document-card">
-                        <span class="doc-type guide">安装指南</span>
-                        <h4>KLOZURE®机械密封安装与调试手册</h4>
-                        <p>详细的安装步骤图解、对中检查、试运行程序及故障排除</p>
-                        <div class="doc-meta">
-                            <span>📄 PDF格式</span>
-                            <span>🔢 6.1MB</span>
-                            <span>🕒 2024更新</span>
-                        </div>
-                        <a href="#" class="download-button">
-                            <span class="download-icon">⬇️</span>
-                            下载文档
-                        </a>
-                    </div>
-
-                    <div class="document-card">
-                        <span class="doc-type case">应用案例</span>
-                        <h4>泵用机械密封应用案例分析</h4>
-                        <p>离心泵、往复泵等不同类型泵的密封解决方案实例</p>
-                        <div class="doc-meta">
-                            <span>📄 PDF格式</span>
-                            <span>🔢 5.7MB</span>
-                            <span>🕒 2024更新</span>
-                        </div>
-                        <a href="#" class="download-button">
-                            <span class="download-icon">⬇️</span>
-                            下载文档
-                        </a>
-                    </div>
+                    <div class="document-card"><h4>Style 660</h4><span class="doc-meta">PDF · 通用压缩垫片</span><a href="docs/compressed/660.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 670</h4><span class="doc-meta">PDF · 耐油压缩垫片</span><a href="docs/compressed/670.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 681</h4><span class="doc-meta">PDF · 耐高温压缩垫片</span><a href="docs/compressed/681.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 700</h4><span class="doc-meta">PDF · 芳纶纤维垫片</span><a href="docs/compressed/700.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 706 / 706M</h4><span class="doc-meta">PDF · 金属增强垫片</span><a href="docs/compressed/706.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 2400</h4><span class="doc-meta">PDF · 通用压缩垫片</span><a href="docs/compressed/2400.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 2900-2950</h4><span class="doc-meta">PDF · 经济型压缩垫片</span><a href="docs/compressed/2900-2950.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Blue-Gard 3000</h4><span class="doc-meta">PDF · 通用型低排放垫片</span><a href="docs/compressed/3000 Blue-Gard.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Blue-Gard 3200</h4><span class="doc-meta">PDF · TA-Luft认证垫片</span><a href="docs/compressed/3200 Blue-Gard.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Blue-Gard 3300</h4><span class="doc-meta">PDF · 耐酸型压缩垫片</span><a href="docs/compressed/3300 Blue-Gard.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Blue-Gard 3400</h4><span class="doc-meta">PDF · 耐高温型压缩垫片</span><a href="docs/compressed/3400 Blue-Gard.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Blue-Gard 3700</h4><span class="doc-meta">PDF · 高耐温型压缩垫片</span><a href="docs/compressed/3700 Blue-Gard.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Leak-Gard 3750</h4><span class="doc-meta">PDF · 低泄漏压缩垫片</span><a href="docs/compressed/3750 Leak-Gard.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Multi-Swell 3760</h4><span class="doc-meta">PDF · 控制膨胀垫片</span><a href="docs/compressed/3760 Multi-Swell.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 5500</h4><span class="doc-meta">PDF · 耐高温碳纤维垫片</span><a href="docs/compressed/5500.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 5507</h4><span class="doc-meta">PDF · 增强型碳纤维垫片</span><a href="docs/compressed/5507.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 9800</h4><span class="doc-meta">PDF · FDA合规食品级垫片</span><a href="docs/compressed/9800.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 9850</h4><span class="doc-meta">PDF · 通用食品级垫片</span><a href="docs/compressed/9850.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 9900</h4><span class="doc-meta">PDF · 耐高温食品级垫片</span><a href="docs/compressed/9900.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 9920</h4><span class="doc-meta">PDF · 超高温食品级垫片</span><a href="docs/compressed/9920.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>706M 技术规格书 (英文)</h4><span class="doc-meta">PDF · 金属增强垫片详情</span><a href="docs/compressed/Technical Data Sheet 706M English.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
                 </div>
             </div>
 
-            <!-- 轴承保护资料 -->
+            <!-- ============ 3. GRAPH-LOCK 石墨垫片 ============ -->
             <div class="resource-category">
                 <div class="category-header">
-                    <span class="category-icon">🛡️</span>
+                    <span class="category-icon">⚫</span>
                     <div>
-                        <h3>轴承保护产品 (Bearing Protection)</h3>
-                        <p>KLOZURE® 轴承隔离器和油封技术文档</p>
+                        <h3>GRAPH-LOCK® 石墨垫片系列 (16份)</h3>
+                        <p>柔性石墨垫片 — 耐极端高温与高压的密封解决方案</p>
                     </div>
                 </div>
                 <div class="document-grid">
-                    <div class="document-card">
-                        <span class="doc-type spec">规格参数</span>
-                        <h4>KLOZURE®轴承隔离器产品目录</h4>
-                        <p>完整的型号规格、适用轴径范围、材料选项及性能数据</p>
-                        <div class="doc-meta">
-                            <span>📄 PDF格式</span>
-                            <span>🔢 3.4MB</span>
-                            <span>🕒 2024更新</span>
-                        </div>
-                        <a href="#" class="download-button">
-                            <span class="download-icon">⬇️</span>
-                            下载文档
-                        </a>
-                    </div>
-
-                    <div class="document-card">
-                        <span class="doc-type guide">安装指南</span>
-                        <h4>轴承隔离器安装与维护指南</h4>
-                        <p>分体式设计的安装优势、维护周期建议及润滑系统配置</p>
-                        <div class="doc-meta">
-                            <span>📄 PDF格式</span>
-                            <span>🔢 2.8MB</span>
-                            <span>🕒 2024更新</span>
-                        </div>
-                        <a href="#" class="download-button">
-                            <span class="download-icon">⬇️</span>
-                            下载文档
-                        </a>
-                    </div>
-
-                    <div class="document-card">
-                        <span class="doc-type case">应用案例</span>
-                        <h4>电机轴承保护系统应用白皮书</h4>
-                        <p>降低轴承故障率、延长设备寿命的成功案例分享</p>
-                        <div class="doc-meta">
-                            <span>📄 PDF格式</span>
-                            <span>🔢 4.1MB</span>
-                            <span>🕒 2024更新</span>
-                        </div>
-                        <a href="#" class="download-button">
-                            <span class="download-icon">⬇️</span>
-                            下载文档
-                        </a>
-                    </div>
+                    <div class="document-card"><h4>Style 3120 GRAPH-LOCK</h4><span class="doc-meta">PDF · 通用石墨垫片</span><a href="docs/graph-lock/3120 Graph-Lock.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 3122 GRAPH-LOCK</h4><span class="doc-meta">PDF · 316SS增强石墨</span><a href="docs/graph-lock/3122 Graph-Lock.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 3123-3125 GRAPH-LOCK</h4><span class="doc-meta">PDF · 标准石墨垫片</span><a href="docs/graph-lock/3123-3125 Graph-Lock.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 3123-3125 HT</h4><span class="doc-meta">PDF · 高温型石墨垫片</span><a href="docs/graph-lock/3123-3125-HT Graph-Lock.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 3124-3126 GRAPH-LOCK</h4><span class="doc-meta">PDF · 增强型石墨垫片</span><a href="docs/graph-lock/3124-3126 Graph-Lock.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 3124-3126 HT</h4><span class="doc-meta">PDF · 增强高温石墨垫片</span><a href="docs/graph-lock/3124-3126-HT Graph-Lock.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 3125MC</h4><span class="doc-meta">PDF · 云母增强石墨垫片</span><a href="docs/graph-lock/3125MC Graph-Lock.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 3125SS</h4><span class="doc-meta">PDF · 316SS箔增强石墨</span><a href="docs/graph-lock/3125SS Graph-Lock.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 3125SS-HT</h4><span class="doc-meta">PDF · SS高温型石墨垫片</span><a href="docs/graph-lock/3125SS-HT Graph-Lock.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 3125SS-PH</h4><span class="doc-meta">PDF · 制药级SS石墨垫片</span><a href="docs/graph-lock/3125SS-PH Graph-Lock.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 3125TC</h4><span class="doc-meta">PDF · 碳纤维增强石墨</span><a href="docs/graph-lock/3125TC Graph-Lock.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 3125TC-HT</h4><span class="doc-meta">PDF · 碳纤维高温石墨</span><a href="docs/graph-lock/3125TC-HT Graph-Lock.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 3125TC-PH</h4><span class="doc-meta">PDF · 制药级碳纤维石墨</span><a href="docs/graph-lock/3125TC-PH Graph-Lock.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 3128 Hochdruck</h4><span class="doc-meta">PDF · 高压专用石墨垫片</span><a href="docs/graph-lock/3128 Hochdruck Graph-Lock.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 3128-HT Hochdruck</h4><span class="doc-meta">PDF · 高压高温型石墨垫片</span><a href="docs/graph-lock/3128-HT Hochdruck Graph-Lock.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 3128RS Hochdruck</h4><span class="doc-meta">PDF · 高压增强型石墨垫片</span><a href="docs/graph-lock/3128RS Hochdruck Graph-Lock.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
                 </div>
             </div>
 
-            <!-- 压缩填料资料 -->
+            <!-- ============ 4. 橡胶垫片 ============ -->
             <div class="resource-category">
                 <div class="category-header">
-                    <span class="category-icon">🔧</span>
+                    <span class="category-icon">🟤</span>
                     <div>
-                        <h3>压缩填料产品 (Compression Packing)</h3>
-                        <p>阀门和泵用填料完整技术资料库</p>
+                        <h3>橡胶垫片系列 (14份)</h3>
+                        <p>多种橡胶弹性体垫片 — 适用广泛的通用密封场景</p>
                     </div>
                 </div>
                 <div class="document-grid">
-                    <div class="document-card">
-                        <span class="doc-type spec">规格参数</span>
-                        <h4>Garlock压缩填料选型指南</h4>
-                        <p>不同材质填料的性能对比、化学兼容性表及温压范围</p>
-                        <div class="doc-meta">
-                            <span>📄 PDF格式</span>
-                            <span>🔢 3.2MB</span>
-                            <span>🕒 2024更新</span>
-                        </div>
-                        <a href="#" class="download-button">
-                            <span class="download-icon">⬇️</span>
-                            下载文档
-                        </a>
-                    </div>
-
-                    <div class="document-card">
-                        <span class="doc-type guide">安装指南</span>
-                        <h4>阀门填料安装与调整手册</h4>
-                        <p>正确的填料压盖调整方法、漏率控制及维护程序</p>
-                        <div class="doc-meta">
-                            <span>📄 PDF格式</span>
-                            <span>🔢 2.6MB</span>
-                            <span>🕒 2024更新</span>
-                        </div>
-                        <a href="#" class="download-button">
-                            <span class="download-icon">⬇️</span>
-                            下载文档
-                        </a>
-                    </div>
-
-                    <div class="document-card">
-                        <span class="doc-type case">应用案例</span>
-                        <h4>VOC排放控制案例研究</h4>
-                        <p>使用低排放填料达到环保法规要求的实际案例</p>
-                        <div class="doc-meta">
-                            <span>📄 PDF格式</span>
-                            <span>🔢 3.9MB</span>
-                            <span>🕒 2024更新</span>
-                        </div>
-                        <a href="#" class="download-button">
-                            <span class="download-icon">⬇️</span>
-                            下载文档
-                        </a>
-                    </div>
+                    <div class="document-card"><h4>Style 19</h4><span class="doc-meta">PDF · 天然橡胶垫片</span><a href="docs/rubber/19.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 22</h4><span class="doc-meta">PDF · SBR橡胶垫片</span><a href="docs/rubber/22.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 7797</h4><span class="doc-meta">PDF · NBR丁腈橡胶垫片</span><a href="docs/rubber/7797.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 7986</h4><span class="doc-meta">PDF · EPDM橡胶垫片</span><a href="docs/rubber/7986.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 7992</h4><span class="doc-meta">PDF · 氯丁橡胶垫片</span><a href="docs/rubber/7992.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 8314</h4><span class="doc-meta">PDF · 氟橡胶FKM垫片</span><a href="docs/rubber/8314.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 8316</h4><span class="doc-meta">PDF · 耐高温氟橡胶垫片</span><a href="docs/rubber/8316.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 8798</h4><span class="doc-meta">PDF · 氯醇橡胶垫片</span><a href="docs/rubber/8798.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 9064</h4><span class="doc-meta">PDF · HNBR氢化丁腈垫片</span><a href="docs/rubber/9064.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 9122</h4><span class="doc-meta">PDF · Aflas®高性能橡胶</span><a href="docs/rubber/9122.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 9200</h4><span class="doc-meta">PDF · 丁基橡胶垫片</span><a href="docs/rubber/9200.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 9518</h4><span class="doc-meta">PDF · 硅橡胶垫片</span><a href="docs/rubber/9518.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 9520</h4><span class="doc-meta">PDF · 耐高温硅橡胶垫片</span><a href="docs/rubber/9520.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 9780</h4><span class="doc-meta">PDF · PTFE包覆橡胶垫片</span><a href="docs/rubber/9780.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
                 </div>
             </div>
 
-            <!-- 管道密封资料 -->
+            <!-- ============ 5. STRESS SAVER 应力消除垫片 ============ -->
             <div class="resource-category">
                 <div class="category-header">
-                    <span class="category-icon">🔗</span>
+                    <span class="category-icon">⭐</span>
                     <div>
-                        <h3>管道密封产品 (Pipe Seals)</h3>
-                        <p>LINK-SEAL® 模块化管道密封系统资料</p>
+                        <h3>STRESS SAVER™ 应力消除垫片 (3份)</h3>
+                        <p>专为搪玻璃/非金属法兰设计的可重复使用垫片</p>
                     </div>
                 </div>
                 <div class="document-grid">
-                    <div class="document-card">
-                        <span class="doc-type spec">规格参数</span>
-                        <h4>LINK-SEAL®产品规格手册</h4>
-                        <p>模块化设计说明、适用管径范围、压力等级及材料选项</p>
-                        <div class="doc-meta">
-                            <span>📄 PDF格式</span>
-                            <span>🔢 2.7MB</span>
-                            <span>🕒 2024更新</span>
-                        </div>
-                        <a href="#" class="download-button">
-                            <span class="download-icon">⬇️</span>
-                            下载文档
-                        </a>
-                    </div>
-
-                    <div class="document-card">
-                        <span class="doc-type guide">安装指南</span>
-                        <h4>LINK-SEAL®安装操作指南</h4>
-                        <p>快速安装步骤、工具清单、质量检查标准及验收要求</p>
-                        <div class="doc-meta">
-                            <span>📄 PDF格式</span>
-                            <span>🔢 3.5MB</span>
-                            <span>🕒 2024更新</span>
-                        </div>
-                        <a href="#" class="download-button">
-                            <span class="download-icon">⬇️</span>
-                            下载文档
-                        </a>
-                    </div>
-
-                    <div class="document-card">
-                        <span class="doc-type case">应用案例</span>
-                        <h4>市政工程穿墙密封应用案例</h4>
-                        <p>污水处理厂、泵站等项目的防水防渗解决方案</p>
-                        <div class="doc-meta">
-                            <span>📄 PDF格式</span>
-                            <span>🔢 4.8MB</span>
-                            <span>🕒 2024更新</span>
-                        </div>
-                        <a href="#" class="download-button">
-                            <span class="download-icon">⬇️</span>
-                            下载文档
-                        </a>
-                    </div>
+                    <div class="document-card"><h4>Style 370</h4><span class="doc-meta">PDF · 标准应力消除垫片</span><a href="docs/stress-saver/370.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 6800</h4><span class="doc-meta">PDF · 高性能应力消除垫片</span><a href="docs/stress-saver/6800.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style XP</h4><span class="doc-meta">PDF · 极端工况应力消除垫片</span><a href="docs/stress-saver/XP.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
                 </div>
             </div>
 
-            <!-- 综合技术资料 -->
+            <!-- ============ 6. 通用资料 ============ -->
             <div class="resource-category">
                 <div class="category-header">
                     <span class="category-icon">📖</span>
                     <div>
-                        <h3>综合技术资料</h3>
-                        <p>行业标准、技术培训、选型工具等通用资料</p>
+                        <h3>综合技术资料 (13份)</h3>
+                        <p>产品目录、隔膜选型、管法兰垫片、中文资料及综合参考</p>
                     </div>
                 </div>
                 <div class="document-grid">
-                    <div class="document-card">
-                        <span class="doc-type spec">规格参数</span>
-                        <h4>Garlock产品总目录 2024版</h4>
-                        <p>完整的产品线概览、技术规格快速参考及联系信息</p>
-                        <div class="doc-meta">
-                            <span>📄 PDF格式</span>
-                            <span>🔢 12.5MB</span>
-                            <span>🕒 2024更新</span>
-                        </div>
-                        <a href="#" class="download-button">
-                            <span class="download-icon">⬇️</span>
-                            下载文档
-                        </a>
-                    </div>
-
-                    <div class="document-card">
-                        <span class="doc-type guide">安装指南</span>
-                        <h4>密封系统设计与安装最佳实践</h4>
-                        <p>工业密封技术培训教材、设计原则及故障预防指南</p>
-                        <div class="doc-meta">
-                            <span>📄 PDF格式</span>
-                            <span>🔢 8.9MB</span>
-                            <span>🕒 2024更新</span>
-                        </div>
-                        <a href="#" class="download-button">
-                            <span class="download-icon">⬇️</span>
-                            下载文档
-                        </a>
-                    </div>
-
-                    <div class="document-card">
-                        <span class="doc-type case">应用案例</span>
-                        <h4>跨行业密封解决方案案例集</h4>
-                        <p>化工、电力、水处理、食品等多行业成功案例汇编</p>
-                        <div class="doc-meta">
-                            <span>📄 PDF格式</span>
-                            <span>🔢 15.3MB</span>
-                            <span>🕒 2024更新</span>
-                        </div>
-                        <a href="#" class="download-button">
-                            <span class="download-icon">⬇️</span>
-                            下载文档
-                        </a>
-                    </div>
-
-                    <div class="document-card">
-                        <span class="doc-type spec">规格参数</span>
-                        <h4>化学兼容性数据库</h4>
-                        <p>1000+种化学品与Garlock材料的兼容性查询表</p>
-                        <div class="doc-meta">
-                            <span>📄 PDF格式</span>
-                            <span>🔢 6.7MB</span>
-                            <span>🕒 2024更新</span>
-                        </div>
-                        <a href="#" class="download-button">
-                            <span class="download-icon">⬇️</span>
-                            下载文档
-                        </a>
-                    </div>
-
-                    <div class="document-card">
-                        <span class="doc-type guide">安装指南</span>
-                        <h4>法兰连接技术手册</h4>
-                        <p>ASME标准解读、螺栓扭矩规范、垫片选型及安装程序</p>
-                        <div class="doc-meta">
-                            <span>📄 PDF格式</span>
-                            <span>🔢 7.4MB</span>
-                            <span>🕒 2024更新</span>
-                        </div>
-                        <a href="#" class="download-button">
-                            <span class="download-icon">⬇️</span>
-                            下载文档
-                        </a>
-                    </div>
-
-                    <div class="document-card">
-                        <span class="doc-type case">应用案例</span>
-                        <h4>密封系统故障排查手册</h4>
-                        <p>常见密封失效模式分析、原因诊断及预防性维护策略</p>
-                        <div class="doc-meta">
-                            <span>📄 PDF格式</span>
-                            <span>🔢 9.2MB</span>
-                            <span>🕒 2024更新</span>
-                        </div>
-                        <a href="#" class="download-button">
-                            <span class="download-icon">⬇️</span>
-                            下载文档
-                        </a>
-                    </div>
+                    <div class="document-card"><h4>Style 3500 GYLON</h4><span class="doc-meta">PDF · 通用PTFE垫片</span><a href="docs/general/3500 Gylon.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 3502 GYLON</h4><span class="doc-meta">PDF · 微孔PTFE垫片</span><a href="docs/general/3502 Gylon.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 3504 GYLON</h4><span class="doc-meta">PDF · 刚性PTFE垫片</span><a href="docs/general/3504 Gylon.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 3510 GYLON</h4><span class="doc-meta">PDF · 通用耐温PTFE</span><a href="docs/general/3510 Gylon.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 5500</h4><span class="doc-meta">PDF · 耐高温碳纤维垫片</span><a href="docs/general/5500.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 8764</h4><span class="doc-meta">PDF · 碳纤维编织填料</span><a href="docs/general/8764_200809.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>HPS 2500 数据表</h4><span class="doc-meta">PDF · 高性能合成垫片</span><a href="docs/general/Data Sheet HPS 2500.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>ONE-UP® 泵隔膜目录</h4><span class="doc-meta">PDF · 泵隔膜产品全系列</span><a href="docs/general/DIA 6-3 ONE-UP Diaphragm Catalog 06.2016.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>GS 8608 数据表 (英文)</h4><span class="doc-meta">PDF · 通用垫片规格书</span><a href="docs/general/GS 8608 Data sheet.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>GS 8608 数据表 (中文)</h4><span class="doc-meta">PDF · 通用垫片中文规格书</span><a href="docs/general/GS 8608 中文 Oct 10.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>Style 2500 数据表</h4><span class="doc-meta">PDF · 管法兰垫片规格</span><a href="docs/general/Style 2500 PC 39025 12-29-09.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>THERMa-PUR® 中文资料</h4><span class="doc-meta">PDF · 耐高温垫片中文版</span><a href="docs/general/THERMa-PUR－CHN.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
+                    <div class="document-card"><h4>706M 技术规格书 (英文)</h4><span class="doc-meta">PDF · 金属增强垫片详情</span><a href="docs/general/Technical Data Sheet 706M English.pdf" class="download-button" download><span class="download-icon">⬇</span> 下载</a></div>
                 </div>
             </div>
 
             <!-- 技术支持联系 -->
             <div class="contact-support">
                 <h3>需要更多技术支持？</h3>
-                <p>如果您没有找到所需的技术资料，或需要定制化的技术支持，请联系我们的技术团队</p>
+                <p>如果您需要定制化的选型建议、化学兼容性分析或现场技术支持，请联系我们的技术团队</p>
                 <a href="contact.html" class="cta-button">联系技术支持</a>
             </div>
         </div>
     </section>
 
-    <!-- 返回顶部按钮 -->
     <button id="backToTop" class="back-to-top" onclick="scrollToTop()" aria-label="返回顶部">⬆</button>
 
-    <!-- 页脚 -->
     <footer class="footer">
         <div class="container">
             <p>&copy; <span class="copyright-year">2024</span> 上海物泽实业有限公司 (Delta Industry). 保留所有权利。</p>
@@ -737,62 +394,32 @@
 
     <script src="script.js"></script>
     <script>
-        // 搜索功能
         document.querySelector('.search-input').addEventListener('input', function(e) {
             const searchTerm = e.target.value.toLowerCase();
             const documentCards = document.querySelectorAll('.document-card');
+            const categories = document.querySelectorAll('.resource-category');
+            let foundAny = false;
             
             documentCards.forEach(card => {
                 const title = card.querySelector('h4').textContent.toLowerCase();
-                const description = card.querySelector('p').textContent.toLowerCase();
+                const meta = card.querySelector('.doc-meta') ? card.querySelector('.doc-meta').textContent.toLowerCase() : '';
                 
-                if (title.includes(searchTerm) || description.includes(searchTerm)) {
-                    card.style.display = 'block';
+                if (searchTerm === '' || title.includes(searchTerm) || meta.includes(searchTerm)) {
+                    card.style.display = 'flex';
+                    foundAny = true;
                 } else {
-                    card.style.display = searchTerm === '' ? 'block' : 'none';
+                    card.style.display = 'none';
                 }
             });
-        });
 
-        // 下载按钮点击提示（仅对占位符链接显示）
-        document.querySelectorAll('.download-button').forEach(button => {
-            button.addEventListener('click', function(e) {
-                // 只对href为"#"的占位符链接显示提示并阻止默认行为
-                if (this.getAttribute('href') === '#') {
-                    e.preventDefault();
-                    alert('此文档暂未上传。\n\n如需获取该技术文档，请访问Garlock官方网站或联系我们的技术支持团队。');
+            categories.forEach(cat => {
+                const visibleCards = cat.querySelectorAll('.document-card[style*="display: flex"], .document-card:not([style*="display: none"])');
+                if (searchTerm !== '') {
+                    const hasVisible = Array.from(cat.querySelectorAll('.document-card')).some(c => c.style.display !== 'none');
+                    cat.style.display = hasVisible ? '' : 'none';
+                } else {
+                    cat.style.display = '';
                 }
-                // 真实的PDF链接会正常执行下载
-            });
-        });
-
-        // 分类筛选功能
-        const filterButtons = document.querySelectorAll('.filter-btn');
-        const documentCards = document.querySelectorAll('.document-card');
-
-        filterButtons.forEach(btn => {
-            btn.addEventListener('click', function() {
-                // 更新活跃按钮样式
-                filterButtons.forEach(b => b.classList.remove('active'));
-                this.classList.add('active');
-
-                const filter = this.getAttribute('data-filter');
-
-                documentCards.forEach(card => {
-                    if (filter === 'all') {
-                        card.classList.remove('hidden-by-filter');
-                    } else {
-                        const docType = card.querySelector('.doc-type');
-                        if (docType) {
-                            const typeClass = docType.classList.contains(filter);
-                            if (typeClass) {
-                                card.classList.remove('hidden-by-filter');
-                            } else {
-                                card.classList.add('hidden-by-filter');
-                            }
-                        }
-                    }
-                });
             });
         });
     </script>
