@@ -1394,3 +1394,294 @@ body {
         gap: 2rem;
     }
 }
+
+/* ===== 页眉 v2（品牌化导航） ===== */
+.navbar {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 12px rgba(0, 30, 70, 0.25);
+    border-bottom: 3px solid var(--accent-color);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 74px;
+}
+
+/* 品牌 logo：图标 + 双行文字 */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.logo-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, var(--accent-color) 0%, #c21f2e 100%);
+    color: #fff;
+    font-size: 1.45rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 10px rgba(230, 57, 70, 0.35);
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.25;
+}
+
+.logo-name {
+    color: #fff;
+    font-size: 1.08rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+
+.logo-sub {
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 0.7rem;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+}
+
+/* 导航链接 */
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 0.25rem;
+}
+
+.nav-links > li {
+    position: relative;
+}
+
+.nav-links > li > a {
+    color: rgba(255, 255, 255, 0.88);
+    text-decoration: none;
+    padding: 0.55rem 0.9rem;
+    font-size: 0.95rem;
+    border-radius: 6px;
+    display: block;
+    transition: background-color 0.25s ease, color 0.25s ease;
+    white-space: nowrap;
+}
+
+.nav-links > li > a:hover,
+.nav-links > li > a.active {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.14);
+}
+
+/* 下拉指示箭头 */
+.nav-arrow {
+    display: inline-block;
+    font-size: 0.62rem;
+    margin-left: 4px;
+    transition: transform 0.25s ease;
+}
+
+.has-dropdown:hover .nav-arrow {
+    transform: rotate(180deg);
+}
+
+/* 产品中心下拉菜单 */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    background: #fff;
+    min-width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 16px 36px rgba(0, 30, 70, 0.22);
+    padding: 0.5rem;
+    z-index: 300;
+    border-top: 3px solid var(--accent-color);
+}
+
+.dropdown::before {
+    content: '';
+    position: absolute;
+    top: -11px;
+    left: 24px;
+    border: 6px solid transparent;
+    border-bottom-color: var(--accent-color);
+}
+
+.has-dropdown:hover .dropdown,
+.has-dropdown:focus-within .dropdown {
+    display: block;
+}
+
+.dropdown a {
+    display: block;
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 0.62rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.dropdown a:hover {
+    background-color: #eef3fa;
+    color: var(--primary-color);
+    padding-left: 1.2rem;
+}
+
+.dropdown a .dd-sub {
+    display: block;
+    font-size: 0.74rem;
+    color: #9ca3af;
+    margin-top: 1px;
+}
+
+/* 联系询价高亮按钮 */
+.nav-links .cta-nav {
+    background-color: var(--accent-color);
+    color: #fff;
+    font-weight: 700;
+    padding: 0.55rem 1.25rem;
+    border-radius: 6px;
+    margin-left: 0.6rem;
+    box-shadow: 0 4px 12px rgba(230, 57, 70, 0.35);
+    transition: all 0.25s ease;
+}
+
+.nav-links .cta-nav:hover,
+.nav-links .cta-nav.active {
+    background-color: #c21f2e;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(230, 57, 70, 0.45);
+}
+
+/* 汉堡菜单 */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.6rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 1001;
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+/* 页眉 v2 响应式 */
+@media (max-width: 1024px) {
+    .nav-links > li > a {
+        padding: 0.5rem 0.6rem;
+        font-size: 0.88rem;
+    }
+    .logo-name {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--primary-color);
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 0.5rem 0 1rem 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s ease;
+        box-shadow: 0 10px 20px rgba(0, 30, 70, 0.3);
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .nav-links.active {
+        max-height: 620px;
+    }
+
+    .nav-links > li > a {
+        padding: 0.85rem 1.5rem;
+        border-radius: 0;
+        font-size: 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .nav-links > li > a:hover,
+    .nav-links > li > a.active {
+        background-color: rgba(0, 0, 0, 0.18);
+    }
+
+    /* 移动端：下拉直接展开 */
+    .has-dropdown .dropdown {
+        position: static;
+        display: none;
+        background: rgba(0, 0, 0, 0.16);
+        box-shadow: none;
+        border-radius: 0;
+        border-top: none;
+        padding: 0.2rem 0;
+        min-width: 0;
+    }
+
+    .has-dropdown .dropdown::before {
+        display: none;
+    }
+
+    .nav-links.active .has-dropdown .dropdown {
+        display: block;
+    }
+
+    .dropdown a {
+        color: rgba(255, 255, 255, 0.88);
+        padding: 0.75rem 1.5rem 0.75rem 2.6rem;
+        font-size: 0.92rem;
+        border-radius: 0;
+    }
+
+    .dropdown a:hover {
+        background-color: rgba(255, 255, 255, 0.08);
+        color: #fff;
+        padding-left: 2.6rem;
+    }
+
+    .dropdown a .dd-sub {
+        color: rgba(255, 255, 255, 0.55);
+    }
+
+    .nav-links .cta-nav {
+        margin: 0.8rem 1.5rem 0 1.5rem;
+        text-align: center;
+        border-radius: 6px;
+        box-shadow: none;
+    }
+
+    .navbar .container {
+        position: relative;
+        min-height: 64px;
+    }
+}
