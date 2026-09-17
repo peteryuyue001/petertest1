@@ -1002,3 +1002,395 @@ body {
         font-size: 1.5rem;
     }
 }
+
+/* ===== 产品详情页 ===== */
+.breadcrumb {
+    background-color: var(--light-bg);
+    padding: 0.8rem 0;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 0.9rem;
+}
+
+.breadcrumb .container {
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.breadcrumb a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb .sep {
+    color: #9ca3af;
+}
+
+.breadcrumb .current {
+    color: #6b7280;
+}
+
+.product-detail {
+    padding: 60px 20px;
+}
+
+.product-overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.product-overview-text h2,
+.product-section h2,
+.related-products h2,
+.cta-section h2 {
+    color: var(--primary-color);
+    font-size: 1.9rem;
+    margin-bottom: 1.2rem;
+}
+
+.product-overview-text p {
+    color: #4b5563;
+    line-height: 1.9;
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+}
+
+.key-features {
+    list-style: none;
+    background: var(--light-bg);
+    border-radius: 8px;
+    padding: 1.5rem 1.8rem;
+}
+
+.key-features li {
+    padding: 0.6rem 0;
+    padding-left: 1.8rem;
+    position: relative;
+    color: #374151;
+    font-size: 0.98rem;
+}
+
+.key-features li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--success-color);
+    font-weight: bold;
+}
+
+.product-section {
+    margin-top: 4rem;
+}
+
+.doc-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.doc-item {
+    background-color: var(--light-bg);
+    padding: 1.1rem 1.3rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--secondary-color);
+    transition: all 0.3s ease;
+}
+
+.doc-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(0, 61, 122, 0.12);
+    border-left-color: var(--accent-color);
+}
+
+.doc-item a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.doc-item a:hover {
+    color: var(--secondary-color);
+}
+
+.doc-item .doc-size {
+    font-size: 0.78rem;
+    color: #9ca3af;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+/* 行业应用列表（产品页内） */
+.application-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 1rem;
+}
+
+.application-tag {
+    background-color: var(--light-bg);
+    border: 1px solid var(--border-color);
+    padding: 0.5rem 1.1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #4b5563;
+}
+
+/* CTA 询价区 */
+.cta-section {
+    margin-top: 4rem;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    border-radius: 12px;
+    padding: 3rem 2rem;
+    text-align: center;
+    color: white;
+}
+
+.cta-section h2 {
+    color: white;
+    margin-bottom: 0.8rem;
+}
+
+.cta-section p {
+    opacity: 0.92;
+    margin-bottom: 1.8rem;
+    font-size: 1.05rem;
+}
+
+.cta-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-button-light {
+    display: inline-block;
+    background-color: white;
+    color: var(--primary-color);
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.cta-button-light:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cta-phone {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    padding: 10px 26px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.cta-phone:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: white;
+}
+
+/* 相关产品 */
+.related-products {
+    margin-top: 4rem;
+}
+
+.related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+.related-card {
+    background: white;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.related-card:hover {
+    border-color: var(--secondary-color);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 22px rgba(0, 61, 122, 0.12);
+}
+
+.related-card .related-icon {
+    font-size: 2.4rem;
+    display: block;
+    margin-bottom: 0.6rem;
+}
+
+.related-card h4 {
+    color: var(--primary-color);
+    font-size: 1.05rem;
+    margin-bottom: 0.4rem;
+}
+
+.related-card p {
+    color: #6b7280;
+    font-size: 0.85rem;
+}
+
+/* ===== FAQ 页面 ===== */
+.faq-content {
+    padding: 60px 20px;
+}
+
+.faq-category {
+    margin-bottom: 3rem;
+}
+
+.faq-category h2 {
+    color: var(--primary-color);
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 3px solid var(--secondary-color);
+    display: inline-block;
+}
+
+.faq-item {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.faq-item:hover {
+    box-shadow: 0 4px 14px rgba(0, 61, 122, 0.1);
+}
+
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 1.2rem 1.5rem;
+    text-align: left;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    font-family: inherit;
+}
+
+.faq-question .faq-arrow {
+    transition: transform 0.3s ease;
+    color: var(--secondary-color);
+    flex-shrink: 0;
+}
+
+.faq-question.active .faq-arrow {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    display: none;
+    padding: 0 1.5rem 1.3rem 1.5rem;
+    color: #4b5563;
+    line-height: 1.9;
+    font-size: 0.98rem;
+}
+
+.faq-answer.active {
+    display: block;
+}
+
+/* ===== 行业解决方案页 ===== */
+.industry-section {
+    padding: 60px 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.industry-section:nth-child(even) {
+    background-color: var(--light-bg);
+}
+
+.industry-section .container {
+    max-width: 1000px;
+}
+
+.industry-section h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 0.4rem;
+}
+
+.industry-section .industry-lead {
+    color: #6b7280;
+    font-size: 1.05rem;
+    margin-bottom: 1.5rem;
+}
+
+.industry-section p {
+    color: #4b5563;
+    line-height: 1.9;
+    margin-bottom: 1rem;
+}
+
+.industry-section h3 {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    margin: 1.4rem 0 0.8rem 0;
+}
+
+.industry-solutions {
+    list-style: none;
+    margin: 1rem 0 1.5rem 0;
+}
+
+.industry-solutions li {
+    padding: 0.55rem 0;
+    padding-left: 1.8rem;
+    position: relative;
+    color: #374151;
+}
+
+.industry-solutions li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.industry-section .cta-button {
+    margin-top: 0.8rem;
+}
+
+/* 产品页响应式 */
+@media (max-width: 768px) {
+    .product-overview {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
