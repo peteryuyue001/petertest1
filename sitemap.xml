@@ -126,4 +126,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url><loc>https://delta-industry.com.cn/metal-seals.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://delta-industry.com.cn/metal-gaskets.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://delta-industry.com.cn/insulating-gaskets.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://delta-industry.com.cn/hygienic-seals.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://delta-industry.com.cn/inflatable-seals.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://delta-industry.com.cn/carbon-seals.html</loc><changefreq>monthly</changefreq></url>
 </urlset>
