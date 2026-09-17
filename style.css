@@ -1387,6 +1387,141 @@ body {
     margin-top: 0.8rem;
 }
 
+/* 产品中心三大分类布局（参照 Garlock 中国官网） */
+.cat-section {
+    padding: 3.5rem 0;
+    background-color: #fff;
+}
+
+.cat-section:nth-of-type(even) {
+    background-color: var(--light-bg);
+}
+
+.cat-head {
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+    margin-bottom: 0.4rem;
+}
+
+.cat-icon {
+    font-size: 2.3rem;
+    line-height: 1;
+}
+
+.cat-head h2 {
+    color: var(--primary-color);
+    font-size: 1.75rem;
+    margin: 0;
+    letter-spacing: 0.02em;
+}
+
+.cat-en {
+    color: #9ca3af;
+    font-size: 0.85rem;
+    margin-left: 0.2rem;
+    font-weight: 400;
+}
+
+.cat-desc {
+    color: #4b5563;
+    margin: 0.9rem 0 2rem;
+    max-width: 1000px;
+    line-height: 1.85;
+    font-size: 0.95rem;
+    padding-left: 3.4rem;
+}
+
+.cat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+    gap: 1.2rem;
+}
+
+.cat-card {
+    background: #fff;
+    border: 1px solid var(--border-color);
+    border-left: 4px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.cat-section:nth-of-type(even) .cat-card {
+    background: #fff;
+}
+
+.cat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 26px rgba(0, 61, 122, 0.14);
+    border-left-color: var(--accent-color);
+}
+
+.cat-card .cc-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.6rem;
+}
+
+.cat-card h3 {
+    color: var(--primary-color);
+    font-size: 1.08rem;
+    margin-bottom: 0.4rem;
+}
+
+.cat-card p {
+    color: #6b7280;
+    font-size: 0.88rem;
+    line-height: 1.65;
+    margin-bottom: 0.6rem;
+}
+
+.cat-card .cc-link {
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.cat-card:hover .cc-link {
+    color: var(--accent-color);
+}
+
+/* 产品中心 CTA 条 */
+.services-cta {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    padding: 3rem 0;
+    text-align: center;
+    color: #fff;
+}
+
+.services-cta h2 {
+    font-size: 1.7rem;
+    margin-bottom: 0.8rem;
+}
+
+.services-cta p {
+    opacity: 0.92;
+    margin-bottom: 1.6rem;
+}
+
+.services-cta .cta-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .cat-desc {
+        padding-left: 0;
+    }
+    .cat-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* 产品页响应式 */
 @media (max-width: 768px) {
     .product-overview {
