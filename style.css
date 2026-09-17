@@ -941,6 +941,45 @@ body {
     margin-top: 3rem;
 }
 
+.footer .footer-links {
+    margin-bottom: 0.6rem;
+}
+
+.footer .footer-links a {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer .footer-links a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* 隐私政策/免责声明正文 */
+.legal-content {
+    padding: 3.5rem 0;
+    background: #fff;
+}
+
+.legal-content .container {
+    max-width: 900px;
+}
+
+.legal-content h2 {
+    color: var(--primary-color);
+    font-size: 1.35rem;
+    margin: 2.2rem 0 0.8rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid var(--light-bg);
+}
+
+.legal-content p {
+    color: #4b5563;
+    line-height: 1.9;
+    margin-bottom: 1rem;
+}
+
 .footer .container {
     display: flex;
     justify-content: space-between;
@@ -1284,6 +1323,7 @@ body {
     margin-bottom: 0.6rem;
 }
 
+.related-card h3,
 .related-card h4 {
     color: var(--primary-color);
     font-size: 1.05rem;
@@ -1928,4 +1968,19 @@ body {
         position: relative;
         min-height: 64px;
     }
+}
+
+/* 资料来源标注 */
+.source-note {
+    background: var(--light-bg);
+    border-top: 1px solid var(--border-color);
+    padding: 1.2rem 0;
+}
+
+.source-note p {
+    color: #9ca3af;
+    font-size: 0.82rem;
+    line-height: 1.7;
+    margin: 0;
+    max-width: 900px;
 }
