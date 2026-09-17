@@ -1551,6 +1551,22 @@ body {
     margin-top: 1px;
 }
 
+.dropdown a.dd-all {
+    margin-top: 0.4rem;
+    border-top: 1px solid var(--border-color);
+    border-radius: 0 0 6px 6px;
+    padding-top: 0.8rem;
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 0.88rem;
+}
+
+.dropdown a.dd-all:hover {
+    background-color: #eef3fa;
+    color: var(--primary-color);
+    padding-left: 1rem;
+}
+
 /* 联系询价高亮按钮 */
 .nav-links .cta-nav {
     background-color: var(--accent-color);
