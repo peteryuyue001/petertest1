@@ -36,18 +36,28 @@ function handleFormSubmit(event) {
         return;
     }
 
-    // 这里可以添加实际的后端接口调用
-    // 目前显示成功消息，实际使用时需要连接到后端服务
-    console.log('表单数据:', data);
-    
-    showMessage(messageDiv, '感谢您的消息！我们会尽快与您联系。', 'success');
+    // 组装询价内容并通过邮件客户端发送（mailto 方案，无需后端）
+    const subjectLine = encodeURIComponent('[' + data.subject + '] 网站询价 - ' + data.name);
+    const bodyLine = encodeURIComponent(
+        '姓名：' + data.name + '\n' +
+        '邮箱：' + data.email + '\n' +
+        '电话：' + (data.phone || '未填写') + '\n' +
+        '主题：' + data.subject + '\n' +
+        '留言内容：\n' + data.message
+    );
+    const mailtoUrl = 'mailto:peter@delta-industry.com.cn?subject=' + subjectLine + '&body=' + bodyLine;
+
+    // 尝试打开邮件客户端；同时保留提示信息
+    const opened = window.location.href = mailtoUrl;
+
+    showMessage(messageDiv, '已为您打开邮件客户端，点击发送即可送达！如未弹出，请直接发送邮件至 peter@delta-industry.com.cn', 'success');
     form.reset();
 
-    // 3秒后隐藏消息
+    // 6秒后隐藏消息
     setTimeout(() => {
         messageDiv.textContent = '';
         messageDiv.className = 'form-message';
-    }, 3000);
+    }, 6000);
 }
 
 // 显示消息
