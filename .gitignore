@@ -30,3 +30,11 @@ yarn-error.log
 *.log
 dist/
 build/
+
+# 操作文档（不部署到线上）
+*.md
+!README.md
+!DEPLOYMENT.md
+!GITHUB_PAGES_SETUP.md
+!CUSTOM_DOMAIN_SETUP.md
+
