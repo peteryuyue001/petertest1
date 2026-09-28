@@ -219,3 +219,35 @@ git push
 ---
 
 **部署完成后，告诉朋友们访问你的网站吧！** 🚀
+
+---
+
+## jsDelivr CDN 缓存刷新（PDF / 静态资源更新后）
+
+本站所有 `docs/` 下 PDF 通过 jsDelivr CDN 分发：
+
+- CDN 前缀：`https://cdn.jsdelivr.net/gh/peteryuyue001/petertest1@main/`
+- 默认缓存约 **12 小时**；**新增文件名无需刷新**，仅当「同名文件被覆盖更新」时需要主动 purge。
+
+### 刷新方法
+
+在仓库根目录执行（需本机可访问 purge.jsdelivr.net）：
+
+```bash
+# 刷新单个文件（路径含空格/中文直接写，脚本自动编码）
+bash tools/purge-cdn.sh "docs/pipe-seals/LINK-SEAL Modular Seal Technical Data Sheet.pdf"
+
+# 一次刷新多个
+bash tools/purge-cdn.sh docs/klozure/a.pdf docs/hose/b.pdf
+
+# 刷新 docs 下全部 PDF
+bash tools/purge-cdn.sh --all-pdfs
+```
+
+也可手动在浏览器访问（路径需 URL 编码）：
+
+```
+https://purge.jsdelivr.net/gh/peteryuyue001/petertest1@main/docs/xxx.pdf
+```
+
+返回 JSON 中 `"status": "ok"` 即刷新请求已受理，全球节点通常数分钟内生效。

@@ -2008,3 +2008,27 @@ body {
     margin-top: 0.5rem;
     text-align: center;
 }
+
+/* ===== 技术文章中心 ===== */
+.article-body { max-width: 860px; margin: 0 auto; line-height: 1.95; color: #374151; font-size: 1.03rem; }
+.article-body h2 { color: #003d7a; margin: 2.6rem 0 1rem; font-size: 1.42rem; padding-left: .85rem; border-left: 4px solid #0066b3; line-height: 1.4; }
+.article-body h3 { color: #111827; margin: 1.6rem 0 .6rem; font-size: 1.12rem; }
+.article-body p { margin: 0 0 1.05rem; }
+.article-body ul, .article-body ol { margin: 0 0 1.2rem 1.4rem; }
+.article-body li { margin-bottom: .55rem; }
+.article-body strong { color: #003d7a; }
+.article-meta { color: #6b7280; font-size: .9rem; margin-bottom: 2rem; padding-bottom: 1.2rem; border-bottom: 1px solid #e5e7eb; }
+.article-faq { margin-top: 2.6rem; }
+.article-cta { margin-top: 2.8rem; background: linear-gradient(135deg, #003d7a, #0066b3); color: #fff; border-radius: 12px; padding: 2.2rem 2rem; text-align: center; }
+.article-cta h2 { color: #fff; border: none; padding: 0; margin: 0 0 .8rem; font-size: 1.4rem; }
+.article-cta p { color: rgba(255,255,255,.92); margin-bottom: 1.4rem; }
+.article-cta .cta-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+.article-cta .cta-button-light { display: inline-block; background: #fff; color: #003d7a; padding: .75rem 1.8rem; border-radius: 6px; font-weight: 600; }
+.article-cta .cta-phone { display: inline-block; border: 1px solid rgba(255,255,255,.6); color: #fff; padding: .75rem 1.6rem; border-radius: 6px; }
+.article-list { display: grid; gap: 1.4rem; max-width: 900px; margin: 0 auto; }
+a.article-card { display: block; background: #fff; border: 1px solid #e5e7eb; border-radius: 10px; padding: 1.6rem 1.8rem; transition: box-shadow .2s, transform .2s; color: #374151; text-decoration: none; }
+a.article-card:hover { box-shadow: 0 8px 24px rgba(0,61,122,.10); transform: translateY(-2px); border-color: #bcd4ea; }
+a.article-card h3 { color: #003d7a; font-size: 1.2rem; margin: 0 0 .6rem; }
+a.article-card p { color: #4b5563; margin: 0 0 .8rem; line-height: 1.7; }
+a.article-card .article-meta { border: none; padding: 0; margin: 0 0 .8rem; font-size: .85rem; color: #6b7280; }
+a.article-card .ac-link { color: #0066b3; font-weight: 600; font-size: .92rem; }

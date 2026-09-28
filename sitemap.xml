@@ -134,4 +134,28 @@
   <url><loc>https://delta-industry.com.cn/carbon-seals.html</loc><changefreq>monthly</changefreq></url>
   <url><loc>https://delta-industry.com.cn/privacy.html</loc><changefreq>yearly</changefreq></url>
   <url><loc>https://delta-industry.com.cn/terms.html</loc><changefreq>yearly</changefreq></url>
+  <url>
+    <loc>https://delta-industry.com.cn/blog.html</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://delta-industry.com.cn/article-spiral-wound-gasket.html</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://delta-industry.com.cn/oil-seals.html</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://delta-industry.com.cn/bearing-isolators.html</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
